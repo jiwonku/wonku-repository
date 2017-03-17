@@ -1,0 +1,11 @@
+Release Note for Polaris Office Kit---------------------------------------------------------------------Release 3.1.3.11 (iOS)---------------------------------------------------------------------NEW FEATURES:* N/A
+NOTES:* N/ACHANGES:
+* KeychainItemWrapper renamed.
+BUG FIXES:* Internal QA issue.
+* License failed error fixed.
+* Add "/Documents/Inbox" exception handling during save.
+* Add exception when user close the document.
+* Fixed an issue that does not copy the text.
+* Saving callback was modified when sharing.
+* Applying isDisableEditing option in a text document.
+* Watermark setting error fixed.
