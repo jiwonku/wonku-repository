@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7316EBD1ECA747C002F1B05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7316EBC1ECA747C002F1B05 /* main.m */; };
+		A7316EC01ECA747C002F1B05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7316EBF1ECA747C002F1B05 /* AppDelegate.m */; };
+		A7316EC31ECA747C002F1B05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7316EC21ECA747C002F1B05 /* ViewController.m */; };
+		A7316EC61ECA747C002F1B05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7316EC41ECA747C002F1B05 /* Main.storyboard */; };
+		A7316EC81ECA747C002F1B05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7316EC71ECA747C002F1B05 /* Assets.xcassets */; };
+		A7316ECB1ECA747C002F1B05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7316EC91ECA747C002F1B05 /* LaunchScreen.storyboard */; };
+		A7316ED41ECA7766002F1B05 /* ManbogiDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7316ED31ECA7766002F1B05 /* ManbogiDisplayViewController.m */; };
+		A7316ED71ECA7789002F1B05 /* ManbogiRecordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7316ED61ECA7789002F1B05 /* ManbogiRecordTableViewController.m */; };
+		A7316ED91ECA77AD002F1B05 /* ManbogiDisplayViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7316ED81ECA77AD002F1B05 /* ManbogiDisplayViewController.storyboard */; };
+		A7316EDB1ECA77C3002F1B05 /* ManbogiRecordTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7316EDA1ECA77C3002F1B05 /* ManbogiRecordTableViewController.storyboard */; };
+		A7316EDE1ECA89FE002F1B05 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7316EDD1ECA89FE002F1B05 /* TabBarViewController.m */; };
+		A7316EE01ECA8A2A002F1B05 /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7316EDF1ECA8A2A002F1B05 /* TabBarViewController.storyboard */; };
+		A7316EE41ECAA2ED002F1B05 /* ManbogiDataManage.m in Sources */ = {isa = PBXBuildFile; fileRef = A7316EE31ECAA2ED002F1B05 /* ManbogiDataManage.m */; };
+		A7316EE71ECAA31E002F1B05 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7316EE61ECAA31E002F1B05 /* libsqlite3.tbd */; };
+		A7316EEA1ECAAEB6002F1B05 /* ManbogiStepAndDistanceCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7316EE91ECAAEB6002F1B05 /* ManbogiStepAndDistanceCalculate.m */; };
+		A7396DB01ECE832D00CE4AEF /* ManbogiNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7396DAF1ECE832D00CE4AEF /* ManbogiNetworkManager.m */; };
+		A7733B721ECBC68600C6385E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7733B711ECBC68600C6385E /* CoreMotion.framework */; };
+		A77C1B321ECD4C9500D26FFB /* ManbogiLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A77C1B311ECD4C9500D26FFB /* ManbogiLocationManager.m */; };
+		A77C1B351ECD4DA900D26FFB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77C1B341ECD4DA900D26FFB /* CoreLocation.framework */; };
+		A77C1B371ECD4DAE00D26FFB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77C1B361ECD4DAE00D26FFB /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A7316EB81ECA747C002F1B05 /* manbogi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = manbogi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7316EBC1ECA747C002F1B05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A7316EBE1ECA747C002F1B05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A7316EBF1ECA747C002F1B05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A7316EC11ECA747C002F1B05 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A7316EC21ECA747C002F1B05 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A7316EC51ECA747C002F1B05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7316EC71ECA747C002F1B05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7316ECA1ECA747C002F1B05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7316ECC1ECA747C002F1B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7316ED21ECA7766002F1B05 /* ManbogiDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManbogiDisplayViewController.h; sourceTree = "<group>"; };
+		A7316ED31ECA7766002F1B05 /* ManbogiDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManbogiDisplayViewController.m; sourceTree = "<group>"; };
+		A7316ED51ECA7789002F1B05 /* ManbogiRecordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManbogiRecordTableViewController.h; sourceTree = "<group>"; };
+		A7316ED61ECA7789002F1B05 /* ManbogiRecordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManbogiRecordTableViewController.m; sourceTree = "<group>"; };
+		A7316ED81ECA77AD002F1B05 /* ManbogiDisplayViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ManbogiDisplayViewController.storyboard; sourceTree = "<group>"; };
+		A7316EDA1ECA77C3002F1B05 /* ManbogiRecordTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ManbogiRecordTableViewController.storyboard; sourceTree = "<group>"; };
+		A7316EDC1ECA89FE002F1B05 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		A7316EDD1ECA89FE002F1B05 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		A7316EDF1ECA8A2A002F1B05 /* TabBarViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBarViewController.storyboard; sourceTree = "<group>"; };
+		A7316EE21ECAA2ED002F1B05 /* ManbogiDataManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManbogiDataManage.h; sourceTree = "<group>"; };
+		A7316EE31ECAA2ED002F1B05 /* ManbogiDataManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManbogiDataManage.m; sourceTree = "<group>"; };
+		A7316EE61ECAA31E002F1B05 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A7316EE81ECAAEB6002F1B05 /* ManbogiStepAndDistanceCalculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManbogiStepAndDistanceCalculate.h; sourceTree = "<group>"; };
+		A7316EE91ECAAEB6002F1B05 /* ManbogiStepAndDistanceCalculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManbogiStepAndDistanceCalculate.m; sourceTree = "<group>"; };
+		A7396DAE1ECE832D00CE4AEF /* ManbogiNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManbogiNetworkManager.h; sourceTree = "<group>"; };
+		A7396DAF1ECE832D00CE4AEF /* ManbogiNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManbogiNetworkManager.m; sourceTree = "<group>"; };
+		A7733B711ECBC68600C6385E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A77C1B301ECD4C9500D26FFB /* ManbogiLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManbogiLocationManager.h; sourceTree = "<group>"; };
+		A77C1B311ECD4C9500D26FFB /* ManbogiLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManbogiLocationManager.m; sourceTree = "<group>"; };
+		A77C1B341ECD4DA900D26FFB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A77C1B361ECD4DAE00D26FFB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7316EB51ECA747C002F1B05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77C1B371ECD4DAE00D26FFB /* MapKit.framework in Frameworks */,
+				A77C1B351ECD4DA900D26FFB /* CoreLocation.framework in Frameworks */,
+				A7733B721ECBC68600C6385E /* CoreMotion.framework in Frameworks */,
+				A7316EE71ECAA31E002F1B05 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7316EAF1ECA747C002F1B05 = {
+			isa = PBXGroup;
+			children = (
+				A7316EBA1ECA747C002F1B05 /* manbogi */,
+				A7316EB91ECA747C002F1B05 /* Products */,
+				A7316EE51ECAA31D002F1B05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7316EB91ECA747C002F1B05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7316EB81ECA747C002F1B05 /* manbogi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7316EBA1ECA747C002F1B05 /* manbogi */ = {
+			isa = PBXGroup;
+			children = (
+				A73945B21ECF59EF00A02C30 /* DistanceManager */,
+				A73945B11ECF598D00A02C30 /* DataBase */,
+				A77C1B331ECD4D1000D26FFB /* LocationManager */,
+				A7316EBE1ECA747C002F1B05 /* AppDelegate.h */,
+				A7316EBF1ECA747C002F1B05 /* AppDelegate.m */,
+				A7316EC11ECA747C002F1B05 /* ViewController.h */,
+				A7316EC21ECA747C002F1B05 /* ViewController.m */,
+				A7316EC41ECA747C002F1B05 /* Main.storyboard */,
+				A7316EDC1ECA89FE002F1B05 /* TabBarViewController.h */,
+				A7316EDD1ECA89FE002F1B05 /* TabBarViewController.m */,
+				A7316EDF1ECA8A2A002F1B05 /* TabBarViewController.storyboard */,
+				A7316ED21ECA7766002F1B05 /* ManbogiDisplayViewController.h */,
+				A7316ED31ECA7766002F1B05 /* ManbogiDisplayViewController.m */,
+				A7316ED81ECA77AD002F1B05 /* ManbogiDisplayViewController.storyboard */,
+				A7316ED51ECA7789002F1B05 /* ManbogiRecordTableViewController.h */,
+				A7316ED61ECA7789002F1B05 /* ManbogiRecordTableViewController.m */,
+				A7316EDA1ECA77C3002F1B05 /* ManbogiRecordTableViewController.storyboard */,
+				A7316EC71ECA747C002F1B05 /* Assets.xcassets */,
+				A7316EC91ECA747C002F1B05 /* LaunchScreen.storyboard */,
+				A7316ECC1ECA747C002F1B05 /* Info.plist */,
+				A7316EBB1ECA747C002F1B05 /* Supporting Files */,
+			);
+			path = manbogi;
+			sourceTree = "<group>";
+		};
+		A7316EBB1ECA747C002F1B05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7316EBC1ECA747C002F1B05 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7316EE51ECAA31D002F1B05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A77C1B361ECD4DAE00D26FFB /* MapKit.framework */,
+				A77C1B341ECD4DA900D26FFB /* CoreLocation.framework */,
+				A7733B711ECBC68600C6385E /* CoreMotion.framework */,
+				A7316EE61ECAA31E002F1B05 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A73945B11ECF598D00A02C30 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				A7316EE21ECAA2ED002F1B05 /* ManbogiDataManage.h */,
+				A7316EE31ECAA2ED002F1B05 /* ManbogiDataManage.m */,
+			);
+			name = DataBase;
+			sourceTree = "<group>";
+		};
+		A73945B21ECF59EF00A02C30 /* DistanceManager */ = {
+			isa = PBXGroup;
+			children = (
+				A7316EE81ECAAEB6002F1B05 /* ManbogiStepAndDistanceCalculate.h */,
+				A7316EE91ECAAEB6002F1B05 /* ManbogiStepAndDistanceCalculate.m */,
+			);
+			name = DistanceManager;
+			sourceTree = "<group>";
+		};
+		A77C1B331ECD4D1000D26FFB /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				A77C1B301ECD4C9500D26FFB /* ManbogiLocationManager.h */,
+				A77C1B311ECD4C9500D26FFB /* ManbogiLocationManager.m */,
+				A7396DAE1ECE832D00CE4AEF /* ManbogiNetworkManager.h */,
+				A7396DAF1ECE832D00CE4AEF /* ManbogiNetworkManager.m */,
+			);
+			name = LocationManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7316EB71ECA747C002F1B05 /* manbogi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7316ECF1ECA747C002F1B05 /* Build configuration list for PBXNativeTarget "manbogi" */;
+			buildPhases = (
+				A7316EB41ECA747C002F1B05 /* Sources */,
+				A7316EB51ECA747C002F1B05 /* Frameworks */,
+				A7316EB61ECA747C002F1B05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = manbogi;
+			productName = manbogi;
+			productReference = A7316EB81ECA747C002F1B05 /* manbogi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7316EB01ECA747C002F1B05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = wonku;
+				TargetAttributes = {
+					A7316EB71ECA747C002F1B05 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = P2LJGR8JSW;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A7316EB31ECA747C002F1B05 /* Build configuration list for PBXProject "manbogi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7316EAF1ECA747C002F1B05;
+			productRefGroup = A7316EB91ECA747C002F1B05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7316EB71ECA747C002F1B05 /* manbogi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7316EB61ECA747C002F1B05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7316EDB1ECA77C3002F1B05 /* ManbogiRecordTableViewController.storyboard in Resources */,
+				A7316ED91ECA77AD002F1B05 /* ManbogiDisplayViewController.storyboard in Resources */,
+				A7316ECB1ECA747C002F1B05 /* LaunchScreen.storyboard in Resources */,
+				A7316EE01ECA8A2A002F1B05 /* TabBarViewController.storyboard in Resources */,
+				A7316EC81ECA747C002F1B05 /* Assets.xcassets in Resources */,
+				A7316EC61ECA747C002F1B05 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7316EB41ECA747C002F1B05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7396DB01ECE832D00CE4AEF /* ManbogiNetworkManager.m in Sources */,
+				A7316EC31ECA747C002F1B05 /* ViewController.m in Sources */,
+				A7316EC01ECA747C002F1B05 /* AppDelegate.m in Sources */,
+				A7316EE41ECAA2ED002F1B05 /* ManbogiDataManage.m in Sources */,
+				A7316EEA1ECAAEB6002F1B05 /* ManbogiStepAndDistanceCalculate.m in Sources */,
+				A7316EBD1ECA747C002F1B05 /* main.m in Sources */,
+				A7316ED41ECA7766002F1B05 /* ManbogiDisplayViewController.m in Sources */,
+				A7316EDE1ECA89FE002F1B05 /* TabBarViewController.m in Sources */,
+				A77C1B321ECD4C9500D26FFB /* ManbogiLocationManager.m in Sources */,
+				A7316ED71ECA7789002F1B05 /* ManbogiRecordTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A7316EC41ECA747C002F1B05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7316EC51ECA747C002F1B05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7316EC91ECA747C002F1B05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7316ECA1ECA747C002F1B05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7316ECD1ECA747C002F1B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7316ECE1ECA747C002F1B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7316ED01ECA747C002F1B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = P2LJGR8JSW;
+				INFOPLIST_FILE = manbogi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.com.jiwonku.manbogi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A7316ED11ECA747C002F1B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = P2LJGR8JSW;
+				INFOPLIST_FILE = manbogi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.com.jiwonku.manbogi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7316EB31ECA747C002F1B05 /* Build configuration list for PBXProject "manbogi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7316ECD1ECA747C002F1B05 /* Debug */,
+				A7316ECE1ECA747C002F1B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7316ECF1ECA747C002F1B05 /* Build configuration list for PBXNativeTarget "manbogi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7316ED01ECA747C002F1B05 /* Debug */,
+				A7316ED11ECA747C002F1B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7316EB01ECA747C002F1B05 /* Project object */;
+}
