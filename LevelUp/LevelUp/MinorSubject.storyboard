@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Minor Subject View Controller-->
+        <scene sceneID="eR4-JF-hUB">
+            <objects>
+                <viewController storyboardIdentifier="MinorSubjectViewController" id="wRG-rZ-880" customClass="MinorSubjectViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LRD-yI-5gG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="My6-lf-vrr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="738"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGZ-Vd-o19">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="qIE-94-rG0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vGZ-Vd-o19" firstAttribute="leading" secondItem="5fy-Kp-Fn3" secondAttribute="leading" id="6Zv-1J-fU8"/>
+                            <constraint firstItem="5fy-Kp-Fn3" firstAttribute="trailing" secondItem="vGZ-Vd-o19" secondAttribute="trailing" id="9Me-Jm-obq"/>
+                            <constraint firstItem="vGZ-Vd-o19" firstAttribute="top" secondItem="My6-lf-vrr" secondAttribute="bottom" constant="20" id="Mud-DF-b0n"/>
+                            <constraint firstItem="5fy-Kp-Fn3" firstAttribute="trailing" secondItem="My6-lf-vrr" secondAttribute="trailing" id="W6b-Yd-gEb"/>
+                            <constraint firstItem="My6-lf-vrr" firstAttribute="leading" secondItem="5fy-Kp-Fn3" secondAttribute="leading" id="dOt-mv-POI"/>
+                            <constraint firstItem="5fy-Kp-Fn3" firstAttribute="bottom" secondItem="vGZ-Vd-o19" secondAttribute="bottom" id="nJU-DV-E6D"/>
+                            <constraint firstItem="My6-lf-vrr" firstAttribute="top" secondItem="5fy-Kp-Fn3" secondAttribute="top" id="rsh-Ih-Dgo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5fy-Kp-Fn3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RW9-wR-xIF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="154.6875"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>running</key>
+		<string></string>
+		<key>push up</key>
+		<string></string>
+		<key>leg up</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>English</key>
+		<string></string>
+		<key>Math</key>
+		<string></string>
+		<key>Korean</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>first</key>
+		<string></string>
+		<key>second</key>
+		<string></string>
+		<key>third</key>
+		<string></string>
+	</dict>
+</array>
+</plist>
