@@ -65,7 +65,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.accessoryType = UITableViewCellAccessoryNone;
-    cell.textLabel.text = @"";
+    cell.textLabel.text = @"1";
 
     return cell;
 }
