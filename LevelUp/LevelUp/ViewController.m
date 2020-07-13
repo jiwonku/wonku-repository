@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SubjectData.h"
+#import "MinorSubjectViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -73,8 +74,15 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];    
-
+    MinorSubjectViewController *minorSubjectViewController = nil;
+    
+//    minorSubjectViewController = [MinorSubjectViewController new];
+    
+    NSString * storyboardName = @"MinorSubject";
+    UIStoryboard * storyBoard = [UIStoryboard storyboardWithName:storyboardName bundle:[NSBundle mainBundle]];
+    minorSubjectViewController = [storyBoard instantiateViewControllerWithIdentifier:NSStringFromClass([MinorSubjectViewController class])];
+    
+    [self.navigationController pushViewController:minorSubjectViewController animated:YES];
 }
 
 

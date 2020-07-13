@@ -7,6 +7,7 @@
 //
 
 #import "SubjectManager.h"
+#import "SubjectData.h"
 
 @implementation SubjectManager
 
