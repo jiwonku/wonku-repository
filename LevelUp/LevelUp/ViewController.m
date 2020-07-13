@@ -71,18 +71,25 @@ static NSString * const reuseIdentifier = @"Cell";
     return cell;
 }
 
+- (IBAction)subjectAddButtonTouched:(id)sender
+{
+    
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MinorSubjectViewController *minorSubjectViewController = nil;
     
-//    minorSubjectViewController = [MinorSubjectViewController new];
-    
     NSString * storyboardName = @"MinorSubject";
     UIStoryboard * storyBoard = [UIStoryboard storyboardWithName:storyboardName bundle:[NSBundle mainBundle]];
     minorSubjectViewController = [storyBoard instantiateViewControllerWithIdentifier:NSStringFromClass([MinorSubjectViewController class])];
+    minorSubjectViewController.modalPresentationStyle = UIModalPresentationFullScreen;
+//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self];
+//    [navigationController pushViewController:minorSubjectViewController animated:YES];
+//    [self.navigationController addChildViewController:minorSubjectViewController];
     
-    [self.navigationController pushViewController:minorSubjectViewController animated:YES];
+    [self presentViewController:minorSubjectViewController animated:YES completion:nil];
+    [self.view addSubview:minorSubjectViewController.view];
 }
 
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="My6-lf-vrr">
-                                <rect key="frame" x="0.0" y="44" width="414" height="738"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="688"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGZ-Vd-o19">
@@ -26,16 +26,29 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTN-4G-SSo">
+                                <rect key="frame" x="20" y="44" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ooT-0e-Two"/>
+                                    <constraint firstAttribute="height" constant="50" id="vEh-7w-BiS"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelButtonTouched:" destination="wRG-rZ-880" eventType="touchUpInside" id="rTx-wg-99M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="vGZ-Vd-o19" firstAttribute="leading" secondItem="5fy-Kp-Fn3" secondAttribute="leading" id="6Zv-1J-fU8"/>
                             <constraint firstItem="5fy-Kp-Fn3" firstAttribute="trailing" secondItem="vGZ-Vd-o19" secondAttribute="trailing" id="9Me-Jm-obq"/>
+                            <constraint firstItem="aTN-4G-SSo" firstAttribute="top" secondItem="5fy-Kp-Fn3" secondAttribute="top" id="GzG-aO-IgV"/>
                             <constraint firstItem="vGZ-Vd-o19" firstAttribute="top" secondItem="My6-lf-vrr" secondAttribute="bottom" constant="20" id="Mud-DF-b0n"/>
+                            <constraint firstItem="aTN-4G-SSo" firstAttribute="leading" secondItem="5fy-Kp-Fn3" secondAttribute="leading" constant="20" id="UA8-Kb-lCW"/>
                             <constraint firstItem="5fy-Kp-Fn3" firstAttribute="trailing" secondItem="My6-lf-vrr" secondAttribute="trailing" id="W6b-Yd-gEb"/>
                             <constraint firstItem="My6-lf-vrr" firstAttribute="leading" secondItem="5fy-Kp-Fn3" secondAttribute="leading" id="dOt-mv-POI"/>
                             <constraint firstItem="5fy-Kp-Fn3" firstAttribute="bottom" secondItem="vGZ-Vd-o19" secondAttribute="bottom" id="nJU-DV-E6D"/>
-                            <constraint firstItem="My6-lf-vrr" firstAttribute="top" secondItem="5fy-Kp-Fn3" secondAttribute="top" id="rsh-Ih-Dgo"/>
+                            <constraint firstItem="My6-lf-vrr" firstAttribute="top" secondItem="aTN-4G-SSo" secondAttribute="bottom" id="rsh-Ih-Dgo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5fy-Kp-Fn3"/>
                     </view>

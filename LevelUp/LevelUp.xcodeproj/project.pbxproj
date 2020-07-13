@@ -19,6 +19,7 @@
 		A73FB82323F1687500DBAA69 /* MinorSubject.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73FB82223F1687500DBAA69 /* MinorSubject.storyboard */; };
 		A73FB82523F16C5500DBAA69 /* SubjectData.plist in Resources */ = {isa = PBXBuildFile; fileRef = A73FB82423F16C5500DBAA69 /* SubjectData.plist */; };
 		A73FB82923F17AA700DBAA69 /* SubjectData.m in Sources */ = {isa = PBXBuildFile; fileRef = A73FB82823F17AA700DBAA69 /* SubjectData.m */; };
+		A753448624BC776000FF339E /* MainSubject.plist in Resources */ = {isa = PBXBuildFile; fileRef = A753448524BC776000FF339E /* MainSubject.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		A73FB82423F16C5500DBAA69 /* SubjectData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SubjectData.plist; sourceTree = "<group>"; };
 		A73FB82723F17AA700DBAA69 /* SubjectData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubjectData.h; sourceTree = "<group>"; };
 		A73FB82823F17AA700DBAA69 /* SubjectData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubjectData.m; sourceTree = "<group>"; };
+		A753448524BC776000FF339E /* MainSubject.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MainSubject.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				A73FB81123F15F1500DBAA69 /* Info.plist */,
 				A73FB81223F15F1500DBAA69 /* main.m */,
 				A73FB82423F16C5500DBAA69 /* SubjectData.plist */,
+				A753448524BC776000FF339E /* MainSubject.plist */,
 			);
 			path = LevelUp;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				A73FB81023F15F1500DBAA69 /* LaunchScreen.storyboard in Resources */,
 				A73FB80D23F15F1500DBAA69 /* Assets.xcassets in Resources */,
+				A753448624BC776000FF339E /* MainSubject.plist in Resources */,
 				A73FB82323F1687500DBAA69 /* MinorSubject.storyboard in Resources */,
 				A73FB82523F16C5500DBAA69 /* SubjectData.plist in Resources */,
 				A73FB80B23F15F1400DBAA69 /* Main.storyboard in Resources */,

@@ -20,6 +20,14 @@
     
 }
 
+- (IBAction)cancelButtonTouched:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+//    [self removeFromParentViewController];
+//    [self.view removeFromSuperview];
+}
+
 
 
 @end
