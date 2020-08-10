@@ -86,12 +86,8 @@ static NSString * const reuseIdentifier = @"Cell";
     UIStoryboard * storyBoard = [UIStoryboard storyboardWithName:storyboardName bundle:[NSBundle mainBundle]];
     minorSubjectViewController = [storyBoard instantiateViewControllerWithIdentifier:NSStringFromClass([MinorSubjectViewController class])];
     minorSubjectViewController.modalPresentationStyle = UIModalPresentationFullScreen;
-//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self];
-//    [navigationController pushViewController:minorSubjectViewController animated:YES];
-//    [self.navigationController addChildViewController:minorSubjectViewController];
-    
+
     [self presentViewController:minorSubjectViewController animated:YES completion:nil];
-    [self.view addSubview:minorSubjectViewController.view];
 }
 
 
