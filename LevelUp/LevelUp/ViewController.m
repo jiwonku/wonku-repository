@@ -49,6 +49,8 @@ static NSString * const reuseIdentifier = @"Cell";
 {
     self.mainSubjectList = [SubjectData sharedSubjectData].subjectArray;
     self.mainSubjectCount = self.mainSubjectList.count;
+    
+    // git test 2
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
