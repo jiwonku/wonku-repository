@@ -35,6 +35,8 @@ static NSString * const reuseIdentifier = @"Cell";
     self.mainSubjectTableView.estimatedRowHeight = UITableViewAutomaticDimension;
     self.mainSubjectTableView.rowHeight = UITableViewAutomaticDimension;
     
+    // git test 1
+    
     int a = 1;
     
 }
