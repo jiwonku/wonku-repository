@@ -56,6 +56,8 @@ static NSString * const reuseIdentifier = @"Cell";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.mainSubjectCount;
+    
+    // git test 3
 }
 
 
