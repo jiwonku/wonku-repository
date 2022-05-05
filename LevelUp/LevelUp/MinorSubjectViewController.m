@@ -23,9 +23,11 @@
 - (IBAction)cancelButtonTouched:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)initMinorSubjectList
+{
     
-//    [self removeFromParentViewController];
-//    [self.view removeFromSuperview];
 }
 
 

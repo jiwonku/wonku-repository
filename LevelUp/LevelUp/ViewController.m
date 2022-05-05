@@ -35,6 +35,8 @@ static NSString * const reuseIdentifier = @"Cell";
     self.mainSubjectTableView.estimatedRowHeight = UITableViewAutomaticDimension;
     self.mainSubjectTableView.rowHeight = UITableViewAutomaticDimension;
     
+    // git test 1
+    
     int a = 1;
     
 }
@@ -49,11 +51,15 @@ static NSString * const reuseIdentifier = @"Cell";
 {
     self.mainSubjectList = [SubjectData sharedSubjectData].subjectArray;
     self.mainSubjectCount = self.mainSubjectList.count;
+    
+    // git test 2
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.mainSubjectCount;
+    
+    // git test 3
 }
 
 
@@ -86,12 +92,8 @@ static NSString * const reuseIdentifier = @"Cell";
     UIStoryboard * storyBoard = [UIStoryboard storyboardWithName:storyboardName bundle:[NSBundle mainBundle]];
     minorSubjectViewController = [storyBoard instantiateViewControllerWithIdentifier:NSStringFromClass([MinorSubjectViewController class])];
     minorSubjectViewController.modalPresentationStyle = UIModalPresentationFullScreen;
-//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self];
-//    [navigationController pushViewController:minorSubjectViewController animated:YES];
-//    [self.navigationController addChildViewController:minorSubjectViewController];
-    
+
     [self presentViewController:minorSubjectViewController animated:YES completion:nil];
-    [self.view addSubview:minorSubjectViewController.view];
 }
 
 
