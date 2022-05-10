@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-//    test 2
+//    test 2 222
 }
 
 - (void)test1
