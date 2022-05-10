@@ -8,6 +8,10 @@
 import Foundation
 
 
+func mutifly(opt1 : Double , opt2 : Double) -> Double {
+    return opt1 * opt2
+}
+
 class CalculatorBrain {
     
     private var accumulator = 0.0
@@ -19,28 +23,21 @@ class CalculatorBrain {
     var operation: Dictionary<String,Operation> = [
         "Pi" : Operation.Constant(.pi),
         "e" : Operation.Constant(M_E),
-        "root" : Operation.UnaryOperation,
-        "cos" : Operation.UnaryOperation
+        "root" : Operation.UnaryOperation(sqrt),
+        "cos" : Operation.UnaryOperation(cos),
+        "multifly" : Operation.BinaryOperation(mutifly),
+        "=" : Operation.Equals
     ]
     
     enum Operation {
         case Constant(Double)
-        case UnaryOperation
-        case BinaryOperation
+        case UnaryOperation((Double) -> Double)
+        case BinaryOperation((Double, Double) -> Double)
         case Equals
     }
     
     
     func performOperation(symbol: String) {
-//        switch symbol {
-//        case "Pi":
-//            accumulator = Double.pi
-//        case "root":
-//            accumulator = sqrt(accumulator)
-//        default :
-//            break
-//        }
-        
         
         if let operation = operation[symbol] {
                         
@@ -48,19 +45,29 @@ class CalculatorBrain {
             case .Constant(let value):
                 accumulator = value
                 break;
-            case .UnaryOperation:
-                
+            case .UnaryOperation(let function):
+                accumulator = function(accumulator)
                 break;
-            case .BinaryOperation:
+            case .BinaryOperation(let function):
                 
                 break;
             case .Equals:
                 
                 break;
-            default:
-                break;
             }
         }
+        
+        
+        //        switch symbol {
+        //        case "Pi":
+        //            accumulator = Double.pi
+        //        case "root":
+        //            accumulator = sqrt(accumulator)
+        //        default :
+        //            break
+        //        }
+        
+        
     }
     
     var result: Double {
